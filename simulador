@@ -1,0 +1,22 @@
+import random
+
+resposta=input('você gostaria de jogar dado ?')
+dado=random.randrange(1,6)
+positivo=("sim")
+negativo=("nao")
+if resposta==positivo:
+    print(f"valor do seu dado é {dado}")
+    resposta_1=input('deseja jogar novamente?')
+    while resposta_1==positivo:
+        dado_1=random.randrange(1,6)
+        print(f"valor do seu dado é {dado_1}")
+        resposta_1 = input('deseja jogar novamente?')
+    else:
+        print("perdão não entendemos sua resposta")
+
+
+elif resposta==negativo:
+    print('ok,ate a proxima')
+else:
+    print('erro,por favor responda com  sim ou nao')
+    
